@@ -13,7 +13,9 @@ const server = http.createServer(app);
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: "https://learnify-alpha-five.vercel.app",
+  origin: {
+    origin: ['http://localhost:5173', process.env.FRONTEND_URL],
+  },
   credentials: true,
 }));
 

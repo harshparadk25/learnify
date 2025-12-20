@@ -41,7 +41,7 @@ const Result = () => {
             <h2 className="text-2xl font-bold text-indigo-600">
               Quiz Result 🎉
             </h2>
-            <p className="text-4xl font-extrabold">{result.score}%</p>
+            <p className="text-4xl font-extrabold">{result.score*10}%</p>
             <p className="text-slate-600">
               {result.correctCount} / {result.totalQuestions} correct
             </p>
